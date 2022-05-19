@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2? family = Architects + Daughter & family = Dança + Script: wght @ 400; 600 & family = Lato: ital, wght @ 0,100; 0,400; 1.300 & family = Companheiro + SC & family = Oswald: wght @ 200; 400 & family = Parisienne & family = Roboto + Laje: wght @ 100; 300 & family = Sombras + Into + Luz & display = trocar ');
+
+/*font-family: 'Architects Daughter', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Mate SC', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Parisienne', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Shadows Into Light', cursive;
+*/
+body,
+html {
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: rgba(192, 9, 9, 0.8);
+	position: relative;
+	background: brown;
+}
+
+body::before {
+	color: black;
+	content: "";
+	position: fixed;
+	background-image: url("./img/logo11.jpg");
+	filter: grayscale(50%) brightness(0.3);
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	z-index: -1;
+}
+
+/*======= Header =======*/
+#header .navbar-brand {
+	color: #f54611;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	font-style: italic;
+
+}
+
+#header .navbar-collapse {
+	width: auto;
+}
+
+#header .nav-link {
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #d8d4d8;
+	border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+	border-bottom: solid 2px #f54611;
+	font-size: 1.1rem;
+	color: #fff;
+	padding: 10px;
+}
+
+#header span {
+	display: flex;
+	position: relative;
+	top: 5px;
+	font-size: 1.5rem;
+	right: -8rem;
+	color: #d8d4d8;
+}
+
+/*======= LOGO ========*/
+#logo {
+	position: relative;
+	top: 10rem;
+}
+
+#logo h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 700;
+	font-family: 'Mate SC', serif;
+	text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
+	line-height: 3.5rem;
+	animation: moveBanner 1s;
+}
+
+#logo h1 a,
+#logo h1 a:hover {
+	color: #fff;
+	line-height: 1;
+	display: inline-block;
+	text-decoration: none
+}
+
+@keyframes moveBanner {
+	0% {
+		transform: translateY(10rem) rotateY(-30deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0) rotateY(0);
+		opacity: 1;
+	}
+}
+
+#logo h2 {
+	font-family: 'Mate SC', serif;
+	font-size: 2rem;
+	margin-top: 10px;
+	color: rgba(255, 255, 255, 0.8);
+	animation: moveBanner 2s;
+}
+
+#logo h2 span {
+	color: #fff;
+	border-bottom: 2px solid #f54611;
+	padding-bottom: 6px;
+}
+
+#logo img {
+	padding: 0;
+	margin: 0;
+}
+
+#logo .social-links {
+	margin-top: 40px;
+	display: flex;
+
+}
+
+#logo .social-links a {
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f10768;
+	background: #363636;
+	line-height: 1;
+	margin-right: 8px;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	text-decoration: none;
+	animation: moveBanner 3s;
+}
+
+#logo .social-links a:hover {
+	background: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+
+/*======= OLÁ ========*/
+#about {
+	position: relative;
+	top: 25rem;
+}
+
+#about .row {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+#about .col-md-7 {
+	position: relative;
+	top: 1rem;
+}
+
+#about span {
+	color: #f54611;
+	font-family: 'Dancing Script', cursive;
+	font-size: 3rem;
+	font-weight: 700;
+	display: block;
+}
+
+#about h4 {
+	color: #fff;
+	font-style: italic;
+	font-family: 'Mate SC', serif;
+	letter-spacing: 2px;
+}
+
+#about .img-fluid {
+	width: 70%;
+	filter: grayscale(40%) brightness(0.9);
+}
+
+/*========= FORMAÇÃO ========
+#formação {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	top: 28rem;
+	padding: 20px;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+#formação h2 {
+	display: block;
+	color: #1ead95;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: 'Dancing Script', cursive;
+}
+
+#formação h3 {
+	font-size: 24px;
+	color: #fff;
+	font-style: italic;
+	font-family: 'Gloria Hallelujah', cursive;
+	display: block;
+}
+
+#formação h4 {
+	font-size: 24px;
+	color: #fff;
+	font-style: italic;
+	font-family: 'Mate SC', serif;
+	display: block;
+}
+
+#formação h5 {
+	font-size: 18px;
+	color: rgb(182, 17, 17);
+	font-style: italic;
+	font-weight: 600;
+	font-family: 'Mate SC', serif;
+	display: block;
+}
+
+#formação p {
+	color: rgb(26, 213, 219);
+	font-style: italic;
+	display: block;
+}
+*/
+/*======== CONHECIMENTO ========*/
+#conhecimento {
+	position: relative;
+	top: 30rem;
+	background-color: #000;
+}
+
+#conhecimento h2 {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	color: #f54611;
+	font-size: 40px;
+	font-weight: 400;
+	font-family: 'Dancing Script', cursive;
+}
+
+#conhecimento a.link-conhecimento {
+	padding: 0 8px;
+	display: flex;
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	/*transition: ease-out all 0.2s;*/
+}
+
+#conhecimento a.link-conhecimento img {
+	max-height: 70px;
+	width: 100%;
+}
+
+
+/*========= PROJETOS ========*/
+#projetos {
+	display: flex;
+	position: relative;
+	top: 32rem;
+	padding: 30px;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+#projetos h2 {
+	display: block;
+	color: #f54611;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: 'Dancing Script', cursive;
+}
+
+#projetos h5 {
+	color: rgb(219, 174, 26);
+	font-style: italic;
+	font-size: 0.8rem;
+	display: block;
+	text-align: center;
+}
+
+#projetos .element-item img {
+	border-radius: 5px;
+}
+
+#projetos .element-item img:hover {
+	box-shadow: 0 0 30px 0 rgb(99, 98, 14);
+}
+
+#projetos .button-group {
+	margin-bottom: 30px;
+}
+
+/*============ CONTATO ============*/
+#contact {
+	position: relative;
+	top: 32rem;
+	background-color: #000;
+	background-size: 100% auto;
+	padding-top: 100px;
+	color: #fff;
+	text-align: center;
+	height: 420px;
+	opacity: 0.8;
+	border-radius: 5px;
+}
+
+#contact .container {
+	max-width: 700px;
+	margin: auto;
+}
+
+#contact h2 {
+	display: block;
+	color: #f54611;
+	font-size: 40px;
+	font-weight: 500;
+	position: relative;
+	top: -5rem;
+	font-family: 'Dancing Script', cursive;
+}
+
+#contact p {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1rem;
+	position: relative;
+	top: -2.5rem;
+	font-weight: 300;
+	color: #f54611;
+}
+
+#contact .field {
+	border: none;
+	padding: 10px;
+	width: 100%;
+	position: relative;
+	top: -4rem;
+	outline: none;
+	background: #fff;
+	border-radius: 30px;
+	margin-bottom: 20px;
+}
+
+#contact textarea.field {
+	background: rgb(245, 241, 241);
+	color: #111111;
+	padding: 10px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+#contact label {
+	position: relative;
+	top: -3rem;
+	font-weight: 600;
+}
+
+#contact .social-contat {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+#contact .social-contat a {
+	font-size: 1.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f10768;
+	background: #e4d7d7;
+	line-height: 1;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+}
+
+#contact .social-contat a:hover {
+	background: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+
+#contact .align-self-center p {
+	display: flex;
+	position: relative;
+	top: 1.5rem;
+	font-family: 'Amatic SC', ;
+	color: #fff;
+	font-size: 1rem;
+}
+
+/*========= BOTÃO TOPO =======*/
+#link-topo {
+	position: fixed;
+	right: 5rem;
+	bottom: 3rem;
+	width: 2rem;
+	height: 2rem;
+	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+	background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	border-radius: .4rem;
+	box-shadow: 0 0 .1rem 0.1rem beige;
+}
+
+#link-topo:hover {
+	color: #f54611;
+}
+
+/*/*/
+/*/*/
+/*/*/
+/*/*/
+@media (min-width: 992px) {
+	#header .nav-link {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	#header .navbar-collapse {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	body::before {
+		background-attachment: fixed;
+	}
+}
+
+@media(max-width:767.98px) {
+	#conhecimento a.destaque .img-container {
+		height: 120px;
+	}
+
+	#conhecimento a.destaque .img-container img {
+		max-height: 120px;
+	}
+
+	#header button {
+		position: relative;
+		top: 0.3rem;
+		bottom: 3rem;
+		width: 3rem;
+		height: 1rem;
+		background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+		background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		border-radius: .4rem;
+		box-shadow: 0 0 .1rem 0.1rem beige;
+	}
+
+	#header button:hover {
+		color: #474647;
+	}
+
+	#header .nav-link:hover {
+		text-decoration: none;
+	}
+}
